@@ -9,7 +9,8 @@
   }
   @include desktop{
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 6rem;
+    margin: 0 10rem;
+    gap: 3rem;
   }
 }
 
@@ -21,10 +22,10 @@
   border-radius: 0.5rem; 
   overflow: hidden; 
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  // transition: transform 0.3s ease, box-shadow 0.3s ease; 
   padding: 0.5rem;
+  transition: 0.3s;
   &:hover {
-    transform: translateY(-5px); 
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);    
   }
   &-img{

@@ -15,23 +15,28 @@ import { FaRegBookmark } from "react-icons/fa";
 
 
 const DetailPage = ({onAddCart}) => {
+  const [popUp,setPopUp] = useState(false);
   const [isMobile,setIsMobile] = useState(window.innerWidth < 1440);
   const[showCount,setShowCount] = useState(false);
   const [count,setCount] = useState(0);
   const month = new Date().getMonth()+1;
   const date = new Date().getDate()+2;
   const { id } = useParams();
+  console.log(popUp);
   const toggleCountArea = ()=>{
     setShowCount(prev => !prev);
   }
   const AddCartDetail = (item,count)=>{
     if(count > 0){
       onAddCart(item,count);
-      alert("장바구니에 추가되었습니다.");
+      setPopUp(true);
     } else {
       alert("수량이 체크되지않았습니다.")
     }
     setCount(0);
+  }
+  const ApproveCart = ()=>{
+    setPopUp(false);
   }
   const filter = selectItem.filter((value)=>{
     return id === value.id;
@@ -64,7 +69,7 @@ const DetailPage = ({onAddCart}) => {
       case "item007":
         return <NotePage/>;
       case "item008":
-        return <KeyRing/>;
+        return <Shampoobar/>;
       default:
         return null;
     }
@@ -165,6 +170,13 @@ const DetailPage = ({onAddCart}) => {
           </div>
         </div>
       </div>
+      {popUp && (
+        <div className="popup-cart">
+          <div className="approve">
+            <p>장바구니에 담겼습니다.</p>
+            <button onClick={ApproveCart}>확인</button>
+          </div>
+        </div>)}
       <div className="several-detail">
         <p className="highlight">상품정보</p>
         <p>리뷰(3,401)</p>

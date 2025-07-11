@@ -38,7 +38,6 @@ const Straw = () => {
 
       <div className="straw-imgwrap">
         <img
-          img
           src={`${process.env.PUBLIC_URL}/images/new-items/new-item-05-1.jpg`}
           alt="리유저블 스테인리스 빨대 세트"
         />

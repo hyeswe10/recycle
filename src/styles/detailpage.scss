@@ -9,6 +9,7 @@
     color: var(--color-maintxt);
     width: 100%;
     @include flex-layout(column);
+    position: relative;
     .pc-wrap{
         padding-top: 3rem;
         width: 100%;
