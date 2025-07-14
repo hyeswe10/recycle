@@ -6,7 +6,7 @@ const CupStand = () => {
   return (
     <div className="wrapper">
       <main>
-        <article className="product-detail">
+        <article className="product-detail-cup">
           <h2>Re:Cup CupStand</h2>
           <hr/>
           <p>Re:는 다시 쓰임을 고민하는 컵받침대 입니다.</p>
