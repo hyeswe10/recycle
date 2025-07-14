@@ -11,7 +11,7 @@ const ScrollBtn = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPC(window.innerWidth >= 1024);
+      setIsPC(window.innerWidth >= 1440);
     };
 
     const handleScroll = () => {

@@ -14,6 +14,7 @@ footer {
     grid-template-areas:
       "one two"
       "three three";
+      gap: 5rem;
   }
   @include desktop {
     grid-template-columns: repeat(2, 1fr);
@@ -21,20 +22,31 @@ footer {
       "one two"
       "three three";
   }
-  gap: 5rem;
+  gap: 1rem;
   h2 {
     width: 100%;
     text-align: left;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--color-subtxt);
+    @include tablet{
+      font-size: 1.2rem;
+    }
   }
   .footer-one {
     grid-area: one;
+    h2{
+      font-size: 1.5rem;
+    }
     @include tablet {
       @include flex-layout(column, flex-start, flex-start);
     }
     ul {
       margin: 1rem 0;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      @include tablet{
+        display: block;
+      }
       li {
         padding: 0.4rem 0;
         cursor: pointer;
@@ -43,6 +55,12 @@ footer {
   }
   .footer-two {
     grid-area: two;
+    h2{
+      display: none;
+      @include tablet{
+        display: block;
+      }
+    }
     ul {
       margin: 0.5rem 0;
       li {
@@ -59,13 +77,18 @@ footer {
     text-align: left;
     margin-bottom: 1rem;
     @include tablet {
+      text-align: center;
       width: 60%;
-      margin-bottom: 1rem;
+      margin: 0 auto;
+      font-size: $font-small;
     }
     @include desktop {
       width: 100%;
       margin-bottom: 1rem;
       @include flex-layout();
+      text-align: center;
+      margin: 0 auto;
+      font-size: $font-small;
     }
   }
 }

@@ -1,7 +1,13 @@
 .goods {
+  overflow: hidden;
+  height: 300px;
   color: var(--color-maintxt);
   margin: 2rem 0;
   position: relative;
+  @include tablet{
+    width: 100%;
+    height: 500px;
+  }
   @include desktop{
     position: absolute;
     top: 0;
@@ -10,6 +16,7 @@
     width: 50%;
   }
   .goods-wrap {
+    z-index: 1;
     width: 100%;
     position: absolute;
     top: 40%;
@@ -29,7 +36,7 @@
     }
 
     h2 {
-      font-size: $font-large;
+      font-size: $font-medium;
       padding: 0.5rem 0;
       @include tablet {
         font-size: $font-h1;
@@ -40,23 +47,34 @@
     }
     button {
       @include banner-btn;
+      width: 200px;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      @include tablet{
+      width: 250px;
+      margin-top: 1.5rem;
+      font-size: $font-small;
+    }
     }
   }
   .img-wrap {
     width: 100%;
     height: 100%;
     img {
+      position: absolute;
+      bottom: 0;
       width: 100%;
+      height: 300px;
       @include tablet {
         width: 100%;
-        height: 600px;
+        height: 500px;
         object-fit: cover;
         object-position: center 80%;
         display: block;
       }
       @include desktop {
         width: 100%;
-        height: 520px;
+        height: 600px;
         object-fit: cover;
         object-position: center 90%;
         display: block;

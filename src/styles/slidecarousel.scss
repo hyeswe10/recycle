@@ -1,6 +1,11 @@
 .pc-only{
+    width: 100%;
+    @include tablet{
+        @include flex-layout(column);
+    }
     @include desktop{
-        height: 520px;
+        display: block;
+        height: 500px;
         width: 100%;
         //임시로 레이아웃 설정
         position: relative;
@@ -11,6 +16,9 @@
     padding: 4rem 0;
     width: 100%;
     position: relative;
+    @include tablet{
+        width: 70%;
+    }
     @include desktop{
         padding: 0;
         width: 50%;
@@ -20,6 +28,7 @@
     }
     .slick-slider{
         width: 100%;
+        height: 100%;
         @include flex-layout();
         position: relative;
         transition: 0.5s;
@@ -68,13 +77,15 @@
         }
         .slick-list{
             width: 100%;
+            height: 100%;
             img{
+                height: 100%;
                 width: 90%;
                 padding: 1rem 2rem;
-                border-radius: 5rem;
+                border-radius: 3rem;
                 @include desktop{
                     border-radius: 0;
-                    height: 520px;
+                    height: 500px;
                     padding: 0;
                 }
         }

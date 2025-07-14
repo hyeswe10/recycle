@@ -58,6 +58,7 @@ nav {
           }
         }
         .submenu {
+          font-weight: normal;
           @include desktop {
             @include flex-layout(column, center, center);
             border: none;

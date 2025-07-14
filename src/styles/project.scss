@@ -1,7 +1,11 @@
 .project{
+  height: 300px;
   color: var(--color-maintxt);
   margin-top: 2rem;
   position: relative;
+  @include tablet{
+    height: 500px;
+  }
   .project-wrap{
     > *{
       // text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -15,13 +19,13 @@
     transform: translate(-40%, -40%);
     @include flex-layout(column, center, center);
     @include tablet{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     h2{
-      font-size: $font-large;
+      font-size: $font-medium;
       padding: 0.5rem 0;
       @include tablet{
         font-size: $font-h1;
@@ -32,15 +36,27 @@
     }
     button {
     @include banner-btn;
+    width: 200px;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
     background-color: var(--color-Secondary);
     border: none;
     color: var(--color-subtxt);
+    @include tablet{
+      width: 250px;
+      margin-top: 1.5rem;
+      font-size: $font-small;
+    }
     }
   }
   .img-wrap {
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 300px;
     position: relative;
+    @include tablet{
+      height: 100%;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -53,16 +69,18 @@
     }
     img {
       width: 100%;
+      position: absolute;
+      bottom: 0;
       @include tablet{
         width: 100%;
-        height: 600px;
+        height: 500px;
         object-fit: cover;
         object-position: center 80%;
         display: block;
       }
       @include desktop{
         width: 100%;
-        height: 700px;
+        height: 500px;
         object-fit: cover;
         object-position: center 90%;
         display: block;
