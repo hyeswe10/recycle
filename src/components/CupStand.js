@@ -4,7 +4,7 @@ const CupStand = () => {
   const { id } = useParams();
   
   return (
-    <div className="wrapper">
+    <div className="wrapper-cup">
       <main>
         <article className="product-detail-cup">
           <h2>Re:Cup CupStand</h2>

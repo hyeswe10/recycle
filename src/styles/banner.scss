@@ -98,9 +98,12 @@
 
   .hashtag-wrap {
     position: absolute;
+    width: 70%;
+    left: 50%;
     top: 52%;
     padding: 0 1rem ;
     z-index: 2;
+    transform: translateX(-50%);
     @include flex-layout(row, center, center);
     flex-wrap: wrap;
     gap: 0.7rem;

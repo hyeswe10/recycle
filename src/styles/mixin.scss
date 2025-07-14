@@ -21,8 +21,9 @@
 //card 버튼 컴포넌트
 @mixin btn-style($bg:var(--color-Secondary)){
   background-color: $bg;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.5rem;
   // border-radius: 0.5rem;
+  font-size: $font-small-small;
   outline: none;
   border: none;
   color: var(--color-subtxt);

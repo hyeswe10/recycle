@@ -38,7 +38,7 @@ const Banner = () => {
   useEffect(() => {
     gsapInit();
     const handleResize = () => {
-      // window.location.reload();
+      window.location.reload();
     };
     window.addEventListener("resize", handleResize);
     return () => {

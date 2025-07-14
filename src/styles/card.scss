@@ -46,12 +46,20 @@
     font-family: 'GongGothicMedium';
     font-weight: 300;
     margin: 0.5rem 0;
+    font-size: $font-small-small;
+    @include tablet{
+      font-size: 1.1rem;
+    }
     
   }
   &-price{
     color: var(--color-primary);
     font-weight: 500;
     margin: 0.5rem 0;
+    font-size: $font-small-small;
+    @include tablet{
+      font-size: 1rem;
+    }
   }
   &-add{
     @include btn-style(var(--color-Secondary));
@@ -70,5 +78,6 @@
     transform: translate(-50%,-50%);
     background-color: rgba(0,0,0,0.7);
     color: var(--color-subtxt);
+    text-align: center;
   }
 }
