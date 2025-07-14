@@ -17,7 +17,7 @@ import { FaRegBookmark } from "react-icons/fa";
 const DetailPage = ({onAddCart}) => {
   const [popUp,setPopUp] = useState(false);
   const [isMobile,setIsMobile] = useState(window.innerWidth < 1440);
-  const[showCount,setShowCount] = useState(false);
+  const [showCount,setShowCount] = useState(false);
   const [count,setCount] = useState(0);
   const month = new Date().getMonth()+1;
   const date = new Date().getDate()+2;
@@ -171,7 +171,7 @@ const DetailPage = ({onAddCart}) => {
         </div>
       </div>
       {popUp && (
-        <div className="popup-cart">
+        <div className="popup-cart" onClick={ApproveCart}>
           <div className="approve">
             <p>장바구니에 담겼습니다.</p>
             <button onClick={ApproveCart}>확인</button>

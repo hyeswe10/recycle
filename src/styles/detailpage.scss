@@ -280,6 +280,47 @@
             }
         }
     }
+    .popup-cart{
+        z-index: 30;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        height: 100vh;
+        .approve{
+            z-index: 35;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 45%;
+            height: 13%;
+            background-color: var(--color-subtxt);
+            color: var(--color- --color-maintxt);
+            border: 1px solid var(--color-primary);
+            border-radius: 1rem;
+            @include flex-layout(column);
+            gap: 1.5rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+            @include desktop{
+                width: 15%;
+                height: 15%;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            button{
+                cursor: pointer;
+                background-color: var(--color-Secondary);
+                border: none;
+                outline: none;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                color: var(--color-subtxt);
+            }
+        }
+    }
     .several-detail{
         margin: 2rem 0;
         border-top: 1px solid var(--color-primary);
