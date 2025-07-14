@@ -24,12 +24,12 @@ const Shampoobar = () => {
         <div className="img-pages">
           <div className="img-wrap">
             <img
-              src="/images/item-shampoo/shampoobar-01.jpg"
+              src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-01.jpg`}
               alt="숲속 비누 샴푸바 이미지-01"
             />
             <div className="img-source-one">
               <img
-                src="/images/item-shampoo/shampoobar-02.jpeg"
+                src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-02.jpeg`}
                 alt="숲속 비누 샴푸바 이미지-01"
               />
               <div className="source-one-txt">
@@ -54,16 +54,16 @@ const Shampoobar = () => {
             </p>
             <div className="img-source-two">
               <img
-                src="/images/item-shampoo/shampoobar-04.jpg"
+                src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-04.jpg`}
                 alt="허브비누이미지"
               />
               <img
-                src="/images/item-shampoo/shampoobar-05.jpg"
+                src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-05.jpg`}
                 alt="비누상세이미지"
               />
               <div className="icon-wrap">
                 <img
-                  src="/images/item-shampoo/ecoicon-01.png"
+                  src={`${process.env.PUBLIC_URL}/images/item-shampoo/ecoicon-01.png`}
                   alt="환경보호 아이콘 4종"
                 />
               </div>
@@ -76,7 +76,7 @@ const Shampoobar = () => {
               </div>
               <div className="forest">
                 <img
-                  src="/images/item-shampoo/shampoobar-mobile-07.jpg"
+                  src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-mobile-07.jpg`}
                   alt="숲 환경이미지"
                 />
                 <div className="forest-txt">
@@ -104,7 +104,7 @@ const Shampoobar = () => {
               <h4>HOW TO USE</h4>
               <hr />
               <img
-                src="/images/item-shampoo/shampoobar-06.jpg"
+                src={`${process.env.PUBLIC_URL}/images/item-shampoo/shampoobar-06.jpg`}
                 alt="샴푸 헤어이미지"
               />
               <div className="hair">
@@ -147,7 +147,7 @@ const Shampoobar = () => {
               </div>
               <div className="icon-paper">
                 <img
-                src="/images/item-shampoo/howtouse-icon-01.png"
+                src={`${process.env.PUBLIC_URL}/images/item-shampoo/howtouse-icon-01.png`}
                 alt="샴푸 헤어이미지"
               />
               </div>

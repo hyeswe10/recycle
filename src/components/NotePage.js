@@ -73,14 +73,14 @@ const NotePage = () => {
               <br />
               새로운 재료가 되어 다시 쓰임이 됩니다.
             </p>
-            <img src="/images/note/note-1.jpg" className="mainimg" ref={mainImgRef}/>
+            <img src={`${process.env.PUBLIC_URL}/images/note/note-1.jpg`} className="mainimg" ref={mainImgRef}/>
           </section>
 
           <section className="note-img-wrap" ref={imgWrapRef}>
-              <img src="/images/note/note-2.jpg" />
-              <img src="/images/note/note-3.jpg" />
-              <img src="/images/note/note-4.jpg"  className="row"/>
-              <img src="/images/note/note-5.jpg" />
+              <img src={`${process.env.PUBLIC_URL}/images/note/note-2.jpg`} />
+              <img src={`${process.env.PUBLIC_URL}/images/note/note-3.jpg`} />
+              <img src={`${process.env.PUBLIC_URL}/images/note/note-4.jpg`}  className="row"/>
+              <img src={`${process.env.PUBLIC_URL}/images/note/note-5.jpg`} />
 <p>
   재생지 노트는 버려진 종이들이 다시 태어나 새로운 이야기와 가치를 품는 공간입니다. 환경을 생각하는 마음으로 지속 가능한 삶을 담았습니다. 소중한 순간들을 기록하는 당신의 이야기에 따뜻한 의미를 더합니다.
 </p>

@@ -37,7 +37,7 @@ const UsageGuide = () => {
         <li key={idx} className={item.pos === "left" ? "left" : "right"}>
           {item.pos === "left" ? (
             <>
-              <img src={item.img} alt='재생지 노트 활용법 left' className='circle'/>
+              <img src={`${process.env.PUBLIC_URL}${item.img}`} alt='재생지 노트 활용법 left' className='circle'/>
               <div className="divider" />
               <p>{item.text}</p>
             </>
@@ -45,7 +45,7 @@ const UsageGuide = () => {
             <>
               <p>{item.text}</p>
               <div className="divider" />
-              <img src={item.img} alt='재생지 노트 활용법 right' className='circle'/>
+              <img src={`${process.env.PUBLIC_URL}${item.img}`} alt='재생지 노트 활용법 right' className='circle'/>
             </>
           )}
         </li>

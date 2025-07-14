@@ -12,6 +12,7 @@ import NotePage from "./NotePage";
 import Straw from "./Straw";
 import KeyRing from "./KeyRing";
 import { FaRegBookmark } from "react-icons/fa";
+import CupStand from "./CupStand";
 
 
 const DetailPage = ({onAddCart}) => {
@@ -59,7 +60,7 @@ const DetailPage = ({onAddCart}) => {
       case "item002":
         return <KeyRing/>;
       case "item003":
-        return <Shampoobar/>;
+        return <CupStand/>;
       case "item004":
         return <Shampoobar/>;
       case "item005":

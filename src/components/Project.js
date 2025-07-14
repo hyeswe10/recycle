@@ -9,7 +9,7 @@ const Project = () => {
         <button>프로젝트 바로가기 ＞</button>
       </div>
       <div className="img-wrap">
-        <img src="/images/project-main-01.jpg" alt="제로 플로우 프로젝트 메인 이미지" />
+        <img src={`${process.env.PUBLIC_URL}/images/project-main-01.jpg`} alt="제로 플로우 프로젝트 메인 이미지" />
       </div>
     </div>
   );

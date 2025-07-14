@@ -23,7 +23,7 @@ const Card = ({item,isHover,onAdd}) => {
     if (!image) return "";
     const src = checkHover ? image.replace("-1", "-2") : image;
     // console.log("이미지경로:",src);
-    return src;
+    return `${process.env.PUBLIC_URL}${src}`
   };
 //상세페이지로 이동2
   const handleImgClick = ()=>{
