@@ -68,6 +68,7 @@
         }
     }
     .fourth-desc{
+        width: 100%;
         text-align: center;
         h2{
             font-size: 3rem;
@@ -99,6 +100,9 @@
         .last-desc{
             margin: 10rem 0;
             width: 100%;
+            img{
+                width: 100%;
+            }
             .rec-explain{
                 margin: 10rem 0;
             }

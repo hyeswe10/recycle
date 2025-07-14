@@ -41,6 +41,7 @@ body{
   // @include font-body;
   font-family: 'Wanted Sans Variable', sans-serif;
   background-color: var(--color-bg);
+  word-break: keep-all;
 }
 #App{
   width: 90%;

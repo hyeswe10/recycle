@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto 2rem auto;
-  width: 485px;
+  width: 100%;
   background-color: #f0e7d9;
   color: var(--color-maintxt);
   @include tablet {
@@ -43,16 +43,20 @@
     .brand-product-info {
       padding-bottom: 2rem;
       border-bottom: 2px dashed var(--color-primary);
+      @include flex-layout(column);
       @include tablet {
         @include flex-layout(column, center, center);
         text-align: center;
       }
       img {
-        width: 250px;
+        width: 70%;
         border: 2px dashed var(--color-primary);
         border-radius: 1rem;
         padding: 1rem;
         margin-bottom: 2rem;
+        @include tablet{
+          width: 250px;
+        }
       }
       .brand-infotxt {
         h3 {
@@ -85,9 +89,13 @@
     color: var(--color-black);
     padding: 2rem;
     img {
+      width: 100%;
       margin-bottom: 1rem;
       border: 10px solid #fff;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      @include tablet{
+        width: 320px;
+      }
     }
     p {
       text-align: center;
