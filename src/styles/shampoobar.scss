@@ -4,7 +4,7 @@
 
 
 .shampoobar {
-  padding: 0 2rem;
+  // padding: 0 2rem;
   margin-top: 5rem;
   text-align: center;
   width: 100%;
@@ -39,7 +39,7 @@
       }
     }
     button {
-      margin: 0 0.2rem;
+      margin: 0.5rem 0.2rem;
       text-wrap: wrap;
       @include hashtag-style-2();
       font-weight: bolder;
@@ -67,6 +67,7 @@
       word-break: keep-all;
     }
     p {
+      padding: 0 2rem;
       @include tablet {
         font-size: 1.3rem;
       }

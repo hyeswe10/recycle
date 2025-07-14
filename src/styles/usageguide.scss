@@ -24,12 +24,12 @@
 }
 
 .guide {
-  white-space: pre-line;
+  white-space: normal;
 
   li {
     @include flex-layout();
     margin: 2rem 0;
-        gap: 1rem;
+        gap: 0.5rem;
 
     @include tablet {
       margin: 2.5rem 0;
@@ -71,17 +71,19 @@
       }
 
       p {
-        width: calc(100% - 200px);
-        max-width: 250px;
-        font-size: $font-small;
+        width: 100%; 
+        max-width: 100%; 
+        font-size: 0.9rem; 
+        line-height: 1.5; 
+        word-break: keep-all; 
         @include tablet {
-          max-width: 300px;
+          max-width: 250px;
           font-size: 1rem;
         }
 
         @include desktop {
           max-width: 350px;
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
       }
     }

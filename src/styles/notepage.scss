@@ -4,13 +4,13 @@
 .wrapper{
   max-width: 700px;
   min-height: 100vh;
-  background-color: #f0e7d9;
+  background-color: #F0E7D9;
   padding: 5rem 3rem;
   margin-bottom: 5rem;
   .product-detail{
+    max-width: 700px;
     text-align: center;
     max-width: 700px;
-    
     .title-main{
       text-align: center;
       font-family: 'GongGothicMedium';
@@ -20,10 +20,9 @@
       margin-bottom: 0;
 //반응형
       @include tablet {
-        font-size: 3rem; 
+        font-size: 3rem;
         margin-top: 6rem;
       }
-
       @include desktop {
         font-size: 3.5rem;
       }
@@ -32,14 +31,13 @@
       margin: 0;
   }
     .main-txt {
-      margin-top: 2rem;  
-      margin-bottom: 1rem 0; 
+      margin-top: 2rem;
+      margin-bottom: 1rem 0;
       .mainimg{
       width: 100%;
       margin-top: 2rem;
       margin-bottom: 1rem;
       }
-
     }
     .note-img-wrap{
       margin: 0;
@@ -55,7 +53,6 @@
       img.row{
         grid-column: 1/3;
         height: 150px;
-                
         @include tablet {
           grid-column: 1 / -1;
           height: 200px;
@@ -68,16 +65,13 @@
         text-align: left;
         // margin: 2rem 0;
         font-size: 1rem;
-
-        line-height: 1.6; 
-        word-break: keep-all; 
-        white-space: normal;        
-
+        line-height: 1.6;
+        word-break: keep-all;
+        white-space: normal;
         @include tablet {
           margin-top: 4rem;
           font-size: 1.1rem;
         }
-
         @include desktop {
           margin-top: 4rem;
           font-size: 1.2rem;
