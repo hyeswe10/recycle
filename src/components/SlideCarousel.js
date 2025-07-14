@@ -25,14 +25,14 @@ const SlideCarousel = () => {
         )
     };
     const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 1800,
+        dots: true, //몇번째 사진인지
+        infinite: true, //무한루프설정
+        autoplay: true, //자동슬라이드
+        autoplaySpeed: 5000, //자동으로 넘어갈때까지 멈춰있는 시간
+        speed: 1800, //슬라이드 넘어가지는 속도
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <NextArrow />,
+        nextArrow: <NextArrow />, //이전, 다음버튼 설정 컴포넌트
         prevArrow: <PrevArrow />,
         pauseOnHover: true,
         responsive: [
