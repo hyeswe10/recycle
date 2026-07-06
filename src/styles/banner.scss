@@ -83,7 +83,7 @@
       @include flex-layout(column, space-around, center);
       .story-two {
         display: flex;
-        text-align: left;
+        text-align: center;
       }
     }
     .story-img {
